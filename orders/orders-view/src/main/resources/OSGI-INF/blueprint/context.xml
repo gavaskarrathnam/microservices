@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+	<!-- START :: Order Service -->	
+	<reference id="orderService" availability="mandatory" interface="net.lr.orders.model.OrderService" />
+	<bean id="orderServlet" class="net.lr.orders.ui.OrderControllerServlet">
+		<property name="orderService" ref="orderService"></property>
+	</bean>
+	<service ref="orderServlet" interface="javax.servlet.http.HttpServlet">
+		<service-properties>
+			<entry key="alias" value="/orderservices" />
+		</service-properties>
+	</service>
+	<!-- END :: Order Service -->	
+	
+</blueprint>

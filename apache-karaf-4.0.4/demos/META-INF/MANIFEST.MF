@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Implementation-Title: Apache Karaf :: Assemblies :: Demos
+Implementation-Version: 4.0.4
+Archiver-Version: Plexus Archiver
+Built-By: jbonofre
+Specification-Vendor: The Apache Software Foundation
+Specification-Title: Apache Karaf :: Assemblies :: Demos
+Implementation-Vendor-Id: org.apache.karaf
+Created-By: Apache Maven 3.3.3
+Build-Jdk: 1.8.0_45
+Specification-Version: 4.0.4
+Implementation-Vendor: The Apache Software Foundation
+

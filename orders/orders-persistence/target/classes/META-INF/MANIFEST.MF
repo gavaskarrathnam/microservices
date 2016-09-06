@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1472031582132
+Build-Jdk: 1.8.0_66
+Built-By: 19208
+Bundle-Blueprint: OSGI-INF/blueprint/context.xml
+Bundle-ManifestVersion: 2
+Bundle-Name: orders-persistence
+Bundle-SymbolicName: net.lr.orders.persistence
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Service: net.lr.orders.model.OrderService;service.exported.interf
+ aces="*"
+Import-Package: net.lr.orders.model;version="[1.0,2)",org.osgi.service.b
+ lueprint;version="[1.0.0,2.0.0)"
+Tool: Bnd-2.1.0.20130426-122213

@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1472031583779
+Build-Jdk: 1.8.0_66
+Built-By: 19208
+Bundle-Blueprint: OSGI-INF/blueprint/context.xml
+Bundle-ManifestVersion: 2
+Bundle-Name: orders-view
+Bundle-SymbolicName: net.lr.orders.view
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: net.lr.orders.ui;uses:="javax.servlet,javax.servlet.http
+ ,net.lr.orders.model";version="1.0.0.SNAPSHOT"
+Export-Service: javax.servlet.http.HttpServlet;alias="/orderservices"
+Import-Package: javax.servlet;version="[3.1,4)",javax.servlet.http;versi
+ on="[3.1,4)",javax.ws.rs;version="[2.0,3)",javax.ws.rs.core;version="[2
+ .0,3)",net.lr.orders.model;version="[1.0,2)",org.osgi.service.blueprint
+ ;version="[1.0.0,2.0.0)"
+Import-Service: net.lr.orders.model.OrderService;multiple:=false
+Tool: Bnd-2.1.0.20130426-122213
