@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+	
+	<!-- START :: Index -->	
+	<bean id="indexServlet" class="com.hex.shopper.view.WelcomeControllerServlet" />
+		
+	<service ref="indexServlet" interface="javax.servlet.http.HttpServlet">
+		<service-properties>
+			<entry key="alias" value="/welcome" />
+		</service-properties>
+	</service>
+	<!-- END :: Index -->	
+	
+	<!-- START :: Product Service -->	
+	<bean id="productServlet" class="com.hex.shopper.view.ProductControllerServlet" />
+		
+	<service ref="productServlet" interface="javax.servlet.http.HttpServlet">
+		<service-properties>
+			<entry key="alias" value="/catalogRestServices" />
+		</service-properties>
+	</service>
+	<!-- END :: Product Service -->		
+	
+	<!-- START :: Cart Service -->	
+	<bean id="cartServlet" class="com.hex.shopper.view.CartControllerServlet" />
+		
+	<service ref="cartServlet" interface="javax.servlet.http.HttpServlet">
+		<service-properties>
+			<entry key="alias" value="/cartRestServices" />
+		</service-properties>
+	</service>
+	<!-- END :: Cart Service -->	
+	
+	<!-- START :: Order Service -->	
+	<bean id="orderServlet" class="com.hex.shopper.view.OrderControllerServlet" />
+		
+	<service ref="orderServlet" interface="javax.servlet.http.HttpServlet">
+		<service-properties>
+			<entry key="alias" value="/orderRestServices" />
+		</service-properties>
+	</service>
+	<!-- END :: Order Service -->		
+	
+	<!-- START :: Customer Service -->	
+	<bean id="customerServlet" class="com.hex.shopper.view.CustomerControllerServlet" />
+		
+	<service ref="customerServlet" interface="javax.servlet.http.HttpServlet">
+		<service-properties>
+			<entry key="alias" value="/hexshoppercustomers" />
+		</service-properties>
+	</service>
+	<!-- END :: Customer Service -->
+	
+	
+</blueprint>
